@@ -18,9 +18,9 @@ return new class extends Migration
                     ->references('id')
                     ->on('customers');
             $table->date('date');
-           /* $table->foreignId('pay_mode_id')
+            $table->foreignId('pay_mode_id')
                     ->references('id')
-                    ->on('pay_mode');*/
+                    ->on('pay_mode');
             $table->timestamps();
         });
     }
