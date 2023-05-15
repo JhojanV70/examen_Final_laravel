@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pay_mode_create', function (Blueprint $table) {
+        Schema::create('pay_mode', function (Blueprint $table) {
             $table->id();
             $table->string('name',64);
             $table->text('observation',200)->nullable();
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pay_mode_create');
+        Schema::dropIfExists('pay_mode');
     }
 };
