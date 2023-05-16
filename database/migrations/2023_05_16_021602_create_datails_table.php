@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('datails', function (Blueprint $table) {
             $table->id();
-           /* $table->foreignId('invoce_id')
+            $table->foreignId('invoce_id')
                     ->references('id')
-                    ->on('invoces');*/
+                    ->on('invoices');
             $table->foreignId('product_id')
                     ->references('id')
                     ->on('products');
